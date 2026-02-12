@@ -1,0 +1,77 @@
+{
+	"layer": "top",
+    // "margin": "10px 10px 0px 10px",
+
+    "modules-left": ["hyprland/workspaces", "mpris"],
+    "modules-center": ["clock"],
+    "modules-right": ["wireplumber", "custom/brightness", "battery", "cpu", "network"],
+    "hyprland/workspaces": {
+	    "persistent-workspaces": {
+		    "*": [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
+	    },
+	    "format": "{icon}",
+	    "format-icons": {
+		    "default": "○",
+		    "active": "●",
+	    }
+    },
+    "network": {
+	    "format-wifi": "{essid} ",
+	    "format-ethernet": "{ipaddr}/{cidr}",
+	    "format-disconnected": "Disconnected ",
+	    "tooltip-format": "{ifname}: {gwaddr}",
+	    "format": "{ifname}: {essid}"
+    },
+    "hyprland/window": {
+	    "format": "{class}",
+    },
+    "cpu": {
+	    "format": "{usage}% ",
+	    "interval": 1,
+    },
+    "memory": {
+	    "format": "{percentage}% {swapPercentage}% ",
+	    "interval": 1,
+    },
+    "clock": {
+	    "format": "{:%I:%M:%S}",
+	    "interval": 1,
+	    "tooltip": true,
+	    "tooltip-format": "{calendar}",
+	    "calendar": {
+		    "format": {
+			    "today": "<span background='#a2dbe3' color='#100d18'>{}</span>",
+		    },
+	    },
+    },
+    "wireplumber": {
+	    "format": "{volume}% {icon}",
+	    "format-muted": "",
+	    "tooltip-format": "{volume}% {node_name}",
+	    "scroll-step": 0,
+	    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+	    "on-click-right": "helvum",
+	    "format-icons": ["", "", ""]
+    },
+    "custom/brightness": {
+	    "interval": 1,
+	    "format": "{}% 󰃟",
+	    "exec": "brightnessctl g"
+    }, 
+    "battery": {
+	    "bat": "BAT1",
+	    "interval": 0,
+	    "format-charging": "{capacity}% 󰂄",
+	    "format-not charging": "{capacity}% 󰂃",
+	    "format-discharging": "{capacity}% {icon}",
+	    "format": "{capacity}% {icon}",
+	    "format-icons": ["󱊡", "󱊢", "󱊣"],
+	    "interval": 1,
+    },
+    "mpris": {
+	    "format": "{dynamic}",
+	    "format-paused": "{dynamic} [paused]",
+	    "dynamic-order": ["title", "artist"],
+	    "interval": 1,
+    },
+}

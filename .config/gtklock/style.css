@@ -1,0 +1,28 @@
+/* "Hide" the button by shrinking it to zero */
+button {
+    min-width: 0px;
+    min-height: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    opacity: 0;
+    /* This ensures any icon/text inside is also crushed */
+    font-size: 0px; 
+}
+
+#input-label {
+    font-size: 0px;
+    margin: 0px;
+    padding: 0px;
+    opacity: 0;
+}
+
+/* Style the password input field */
+entry {
+    border: 2px solid #45475a; 
+    border-radius: 50px;
+    padding: 10px 30px;
+    
+    /* Center the bar */
+    margin: 0px;
+}

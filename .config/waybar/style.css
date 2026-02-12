@@ -1,0 +1,64 @@
+* {
+    font-family: "DejaVu Sans Mono", "Symbols Nerd Font", "IPAGothic Bold";
+}
+
+window#waybar {
+    background-color: #100d18;
+    border-radius: 0px;
+    font-size: 14px;
+}
+
+.modules-right {
+    padding: 0 10px;
+}
+
+tooltip {
+    background-color: #100d18;
+    border-radius: 10px;
+    border: 0px;
+}
+
+tooltip label {
+    color: #a2dbe3;
+}
+
+#workspaces  {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#workspaces button {
+    color: #a2dbe3;
+    padding: 3px 5px 5px 5px;
+}
+
+#workspaces button.empty {
+    color: rgba(100, 100, 100, 0.75);
+}
+
+#workspaces button.active {
+    color: #00cc88;
+}
+
+#workspaces button:hover,
+#workspaces button.*:hover {
+    box-shadow: none;
+    text-shadow: none;
+    transition: none;
+    background: rgba(0, 0, 0, 0.0);
+    border-color: rgba(0, 0, 0, 0.0);
+    color: #00cc88;
+}
+
+
+#network,
+#wireplumber,
+#custom-brightness,
+#battery,
+#cpu,
+#memory,
+#mpris,
+#clock {
+    color: #a2dbe3;
+    padding: 0 6px;
+}
