@@ -50,7 +50,6 @@
 	    "tooltip-format": "{volume}% {node_name}",
 	    "scroll-step": 0,
 	    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-	    "on-click-right": "helvum",
 	    "format-icons": ["", "", ""]
     },
     "custom/brightness": {

@@ -1,3 +1,4 @@
+7zip
 adobe-source-code-pro-fonts
 adobe-source-sans-fonts
 adobe-source-serif-fonts
@@ -13,6 +14,7 @@ bluez
 brightnessctl
 burpsuite
 code
+code-features
 colord
 cups
 cups-filters
@@ -68,10 +70,11 @@ os-prober
 pavucontrol
 pipewire
 pipewire-alsa
-plasma-x11-session
 power-profiles-daemon
 python
 python-gtts
+python-matplotlib
+python-pandas
 python-pillow
 python-pip
 python-pwntools
@@ -80,6 +83,7 @@ python-scapy
 qalculate-qt
 qbittorrent
 qt5-wayland
+rustup
 sl
 slurp
 sof-firmware
@@ -122,6 +126,7 @@ ttf-linux-libertine-g
 ttf-ms-win11-auto
 ttf-nerd-fonts-symbols
 uboot-tools
+unzip
 vim
 waybar
 wget
